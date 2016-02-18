@@ -23,7 +23,7 @@ fn is_palindrome(num: i32) -> bool {
     true
 }
 
-pub fn answer() -> String {
+pub fn main() {
     let mut largest_palindrome = 0;
 
     for x in 100..1000 {
@@ -35,5 +35,5 @@ pub fn answer() -> String {
         }
     }
 
-    largest_palindrome.to_string()
+    println!("{}", largest_palindrome);
 }

@@ -1,4 +1,4 @@
-pub fn answer() -> String {
+pub fn main() {
     let mut the_sum: i32 = 0;
 
     for x in 1..1000 {
@@ -7,5 +7,5 @@ pub fn answer() -> String {
         }
     }
 
-    the_sum.to_string()
+    println!("{}", the_sum);
 }

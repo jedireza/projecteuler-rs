@@ -1,4 +1,4 @@
-pub fn answer() -> String {
+pub fn main() {
     let mut the_sum: i32 = 0;
     let mut prev = (0, 1);
 
@@ -17,5 +17,5 @@ pub fn answer() -> String {
         prev = (y, fibo);
     }
 
-    the_sum.to_string()
+    println!("{}", the_sum);
 }

@@ -1,6 +1,6 @@
 extern crate primal;
 
-pub fn answer() -> String {
+pub fn main() {
     let sieve = primal::Sieve::new(10000);
     let factor_result = sieve.factor(600851475143);
 
@@ -15,5 +15,5 @@ pub fn answer() -> String {
         Err(_) => "Error!".to_string(),
     };
 
-    answer
+    println!("{}", answer);
 }

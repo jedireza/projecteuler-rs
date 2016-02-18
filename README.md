@@ -7,6 +7,6 @@ My projecteuler.net solutions in Rust.
 
 ```bash
 usage:
-cargo run <string>
-    The 3 digit problem id. Ex: 001, 012, 142
+cargo run --bin <problem>
+    The name of the problem file.  Ex: p001, p012, p142
 ```

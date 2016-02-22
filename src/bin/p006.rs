@@ -1,13 +1,7 @@
 pub fn main() {
-    let mut sum_of_squares = 0_u64;
-    let mut square_of_sums = 0_u64;
+    let limit = 100_u64;
+    let sum = limit * (limit + 1) / 2;
+    let sum_sq = (2 * limit + 1) * (limit + 1) * limit / 6;
 
-    for x in 1..101 {
-        sum_of_squares += x * x;
-        square_of_sums += x;
-    }
-
-    square_of_sums *= square_of_sums;
-
-    println!("{}", square_of_sums - sum_of_squares);
+    println!("{}", (sum * sum) - sum_sq);
 }
